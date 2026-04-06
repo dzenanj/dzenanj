@@ -48,26 +48,36 @@ a {
 }
 
 .logo {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.28em;
   color: #ffffff;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.35);
 }
 
 nav {
   display: flex;
-  gap: 24px;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.10);
 }
 
 nav a {
-  font-size: 0.95rem;
-  opacity: 0.86;
-  color: #ffffff;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255,255,255,0.92);
+  padding: 10px 16px;
+  border-radius: 999px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 nav a:hover {
-  opacity: 1;
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
   transform: translateY(-1px);
 }
 
