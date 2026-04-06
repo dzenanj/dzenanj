@@ -6,8 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-<script src="script.js"></script>
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -53,6 +51,7 @@ a {
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.22em;
+  color: #ffffff;
 }
 
 nav {
@@ -63,6 +62,7 @@ nav {
 nav a {
   font-size: 0.95rem;
   opacity: 0.86;
+  color: #ffffff;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
@@ -109,6 +109,7 @@ nav a:hover {
   font-size: clamp(2.7rem, 6vw, 5.5rem);
   line-height: 0.97;
   margin: 0 0 20px;
+  color: #ffffff;
 }
 
 .hero-text,
@@ -189,6 +190,7 @@ nav a:hover {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   line-height: 1.08;
   margin-top: 0;
+  color: #ffffff;
 }
 
 .text-link {
@@ -236,6 +238,7 @@ nav a:hover {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 1.25rem;
+  color: #ffffff;
 }
 
 .video-card p {
@@ -273,7 +276,6 @@ nav a:hover {
   font-size: 0.92rem;
 }
 
-/* reveal animation */
 .reveal {
   opacity: 0;
   transform: translateY(34px);
