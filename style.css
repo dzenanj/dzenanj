@@ -77,7 +77,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   background:
-    linear-gradient(135deg, rgba(0,0,0,0.35), rgba(0,0,0,0.72)),
+    linear-gradient(135deg, rgba(0,0,0,0.18), rgba(0,0,0,0.45)),
     url("images/hero.jpg") center/cover no-repeat;
 }
 
