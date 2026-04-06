@@ -277,8 +277,8 @@ nav a:hover {
   min-height: 420px;
   border-radius: 22px;
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)),
-    #17171b;
+    linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.18)),
+    url("images/about.jpg") center/cover no-repeat;
   border: 1px solid rgba(255,255,255,0.06);
 }
 
