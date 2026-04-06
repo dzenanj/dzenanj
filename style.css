@@ -277,13 +277,18 @@ nav a:hover {
   
 .reveal {
   opacity: 1;
-  transform: none;
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.ready {
+  opacity: 0;
+  transform: translateY(28px);
 }
 
 .reveal.active {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
 }
 
 @media (max-width: 900px) {
