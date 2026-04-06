@@ -70,7 +70,7 @@ nav a {
   font-size: 1.02rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: rgba(255,255,255,0.43);
+  color: rgba(255,255,255,0.92);
   padding: 10px 16px;
   border-radius: 999px;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
