@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
 }
 
+<script src="script.js"></script>
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
