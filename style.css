@@ -268,13 +268,13 @@ nav a:hover {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.6fr 0.8fr;
   gap: 30px;
   align-items: center;
 }
 
 .about-image {
-  min-height: 320px;
+  min-height: 450px;
   border-radius: 22px;
   background:
     linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.18)),
