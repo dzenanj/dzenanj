@@ -231,6 +231,7 @@ nav a:hover {
 }
 
 .gallery-item {
+  min-height: 220px;
   border-radius: 20px;
   background-color: #17171b;
   background-size: cover;
