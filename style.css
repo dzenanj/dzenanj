@@ -274,7 +274,7 @@ nav a:hover {
 }
 
 .about-image {
-  min-height: 420px;
+  min-height: 320px;
   border-radius: 22px;
   background:
     linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.18)),
