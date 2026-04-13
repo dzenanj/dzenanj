@@ -177,14 +177,20 @@ nav a.active {
 }
 
 .page-hero-compact {
-  padding: 56px 0 18px;
+  padding: 56px 0 6px;
+}
+
+.page-hero-compact .page-text {
+  margin-bottom: 18px;
 }
 
 .page-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.gallery {
+  margin-top: -8px;
 }
 
 .page-meta span {
