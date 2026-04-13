@@ -168,8 +168,8 @@ nav a.active {
   background: rgba(255,255,255,0.08);
 }
 
-.section {
-  padding: 90px 0;
+.section-tight-top {
+  padding-top: 18px;
 }
 
 .page-main {
