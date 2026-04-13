@@ -59,4 +59,18 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && lightbox && lightbox.classList.contains("active")) {
     closeLightbox();
   }
+
+  document.addEventListener("contextmenu", (event) => {
+  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox img")) {
+    event.preventDefault();
+  }
+
+    document.addEventListener("dragstart", (event) => {
+  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox img")) {
+    event.preventDefault();
+  }
+
+      
+});
+});
 });
