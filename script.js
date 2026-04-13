@@ -49,7 +49,9 @@ lightboxTriggers.forEach((item, index) => {
   item.addEventListener("click", () => {
     currentImageIndex = index;
     showLightboxImage(currentImageIndex);
-    lightbox.classList.add("active");
+    if (lightbox) {
+      lightbox.classList.add("active");
+    }
     document.body.style.overflow = "hidden";
   });
 });
@@ -127,8 +129,9 @@ navLinks.forEach((link) => {
   if (linkPage === currentPage) {
     link.classList.add("active");
   }
+});
 
-  document.querySelectorAll('a[href]').forEach((link) => {
+document.querySelectorAll('a[href]').forEach((link) => {
   const href = link.getAttribute('href');
 
   if (
@@ -149,12 +152,10 @@ navLinks.forEach((link) => {
           window.location.href = url;
         }, 220);
       }
-
-      window.addEventListener("load", () => {
-  document.body.classList.add("page-loaded");
-});
-      
     });
   }
 });
+
+window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
 });
