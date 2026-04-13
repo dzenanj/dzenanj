@@ -127,4 +127,29 @@ navLinks.forEach((link) => {
   if (linkPage === currentPage) {
     link.classList.add("active");
   }
+
+  document.querySelectorAll('a[href]').forEach((link) => {
+  const href = link.getAttribute('href');
+
+  if (
+    href &&
+    !href.startsWith('#') &&
+    !href.startsWith('mailto:') &&
+    !href.startsWith('tel:') &&
+    !link.hasAttribute('target')
+  ) {
+    link.addEventListener('click', (event) => {
+      const url = link.href;
+
+      if (url && url !== window.location.href) {
+        event.preventDefault();
+        document.body.classList.add('fade-out');
+
+        setTimeout(() => {
+          window.location.href = url;
+        }, 220);
+      }
+    });
+  }
+});
 });
