@@ -475,35 +475,38 @@ nav a.active {
   .hero {
     min-height: 88vh;
   }
-  .lightbox-arrow {
+ .lightbox-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 54px;
-  height: 54px;
-  border: none;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255,255,255,0.14);
   border-radius: 999px;
-  background: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.08);
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1;
   cursor: pointer;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: background 0.25s ease, transform 0.25s ease;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   z-index: 10000;
 }
 
 .lightbox-arrow:hover {
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.20);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.20);
 }
 
 .lightbox-arrow-left {
-  left: 24px;
+  left: 18px;
 }
 
 .lightbox-arrow-right {
-  right: 24px;
+  right: 18px;
 }
 
 @media (max-width: 900px) {
