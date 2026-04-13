@@ -26,7 +26,7 @@ const lightboxTriggers = document.querySelectorAll(".lightbox-trigger");
 lightboxTriggers.forEach((item) => {
   item.addEventListener("click", () => {
     const imageSrc = item.getAttribute("data-image");
-    lightboxImage.src = imageSrc;
+    lightboxImage.style.backgroundImage = `url("${imageSrc}")`;
     lightbox.classList.add("active");
     document.body.style.overflow = "hidden";
   });
@@ -38,7 +38,7 @@ function closeLightbox() {
   document.body.style.overflow = "";
   setTimeout(() => {
     if (lightboxImage) {
-      lightboxImage.src = "";
+      lightboxImage.style.backgroundImage = "";
     }
   }, 300);
 }
@@ -59,18 +59,16 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && lightbox && lightbox.classList.contains("active")) {
     closeLightbox();
   }
+});
 
-  document.addEventListener("contextmenu", (event) => {
-  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox img")) {
+document.addEventListener("contextmenu", (event) => {
+  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox-display")) {
     event.preventDefault();
   }
+});
 
-    document.addEventListener("dragstart", (event) => {
-  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox img")) {
+document.addEventListener("dragstart", (event) => {
+  if (event.target.closest(".gallery-item") || event.target.closest(".lightbox-display")) {
     event.preventDefault();
   }
-
-      
-});
-});
 });
