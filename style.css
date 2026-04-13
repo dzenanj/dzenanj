@@ -475,4 +475,50 @@ nav a.active {
   .hero {
     min-height: 88vh;
   }
+  .lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.25s ease, transform 0.25s ease;
+  z-index: 10000;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.lightbox-arrow-left {
+  left: 24px;
+}
+
+.lightbox-arrow-right {
+  right: 24px;
+}
+
+@media (max-width: 900px) {
+  .lightbox-arrow {
+    width: 46px;
+    height: 46px;
+    font-size: 1.7rem;
+  }
+
+  .lightbox-arrow-left {
+    left: 14px;
+  }
+
+  .lightbox-arrow-right {
+    right: 14px;
+  }
+}
 }
