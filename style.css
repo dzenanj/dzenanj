@@ -267,7 +267,7 @@ nav a:hover {
 
 .gallery-item.hero-strip {
   grid-column: 1 / -1;
-  grid-row: span 4;
+  grid-row: span 5;
 }
 
 .gallery-item.medium-left {
