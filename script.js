@@ -77,9 +77,14 @@ const navLinks = document.querySelectorAll("nav a");
 
 navLinks.forEach((link) => {
   const linkPage = link.getAttribute("href");
-  if (linkPage === currentPage) {
+  if (
+    linkPage === currentPage ||
+    (currentPage === "" && linkPage === "index.html") ||
+    window.location.pathname.endsWith(linkPage)
+  ) {
     link.classList.add("active");
   }
+});
   
 });
 });
