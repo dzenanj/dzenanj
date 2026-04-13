@@ -384,14 +384,22 @@ nav a:hover {
   visibility: visible;
 }
 
-.lightbox img {
-  max-width: 92vw;
-  max-height: 88vh;
+.lightbox-display {
+  width: min(92vw, 1400px);
+  height: min(88vh, 900px);
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   transform: scale(0.94);
   opacity: 0;
   transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.lightbox.active .lightbox-display {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .lightbox.active img {
