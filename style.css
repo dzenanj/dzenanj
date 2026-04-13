@@ -473,6 +473,14 @@ nav a.active {
   right: 12px;
 }
 
+body {
+  transition: opacity 0.28s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
 @media (max-width: 900px) {
   .split,
   .video-grid,
