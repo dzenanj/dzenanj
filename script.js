@@ -149,6 +149,11 @@ navLinks.forEach((link) => {
           window.location.href = url;
         }, 220);
       }
+
+      window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
+});
+      
     });
   }
 });
