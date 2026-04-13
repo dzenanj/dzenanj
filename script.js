@@ -17,3 +17,46 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach((item) => {
   observer.observe(item);
 });
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxClose = document.getElementById("lightbox-close");
+const lightboxTriggers = document.querySelectorAll(".lightbox-trigger");
+
+lightboxTriggers.forEach((item) => {
+  item.addEventListener("click", () => {
+    const imageSrc = item.getAttribute("data-image");
+    lightboxImage.src = imageSrc;
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function closeLightbox() {
+  if (!lightbox) return;
+  lightbox.classList.remove("active");
+  document.body.style.overflow = "";
+  setTimeout(() => {
+    if (lightboxImage) {
+      lightboxImage.src = "";
+    }
+  }, 300);
+}
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox && lightbox.classList.contains("active")) {
+    closeLightbox();
+  }
+});
